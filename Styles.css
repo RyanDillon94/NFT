@@ -1,3 +1,5 @@
+/* 🌐 Global + Typography */
+
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
 :root {
@@ -17,12 +19,16 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.03em;
 }
 
 body {
   margin: 0;
   background-color: var(--Bluemain);
 }
+
+/* 🧱 Layout Containers */
 
 .container {
   display: flex;
@@ -46,10 +52,32 @@ body {
   margin-top: 20px;
 }
 
-.score{ 
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+hr {
+  background-color: var(--Blueline);
+  height: 2px;
+  border: none;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.creator {
+  margin-bottom: 15px;
+}
+
+/* 🖼️ Image + Overlay */
+
+.image-container {
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.image-container img {
+  width: 100%;
+  display: block;
 }
 
 img {
@@ -58,59 +86,115 @@ img {
   border-radius: 10px;
 }
 
-hr {
-  background-color: var(--Blueline);
-  height: 2px;
-  border: none;
-  width: 90%;
-}
-
-h1 {
-  color: var(--White);
-}
-
-h2 {
-  color: var(--Cyan);
-  font-size: 18px;
-}
-
-h2 img {
-  width: 20px;
-  height: auto;
-}
-
-#clock {
-  width: 1em;
-  height: auto;
-  vertical-align: middle;
-}
-
-#eth {
-  width: .6em;
-  height: auto;
-  vertical-align: middle;
+img:hover {
+  cursor: pointer;
 }
 
 #face {
-  width: 1em;
+  width: 1.5em;
   height: auto;
   vertical-align: middle;
+  border: 1.5px solid white;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+
+/* Overlay + Icon */
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 255, 247, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.eye-icon {
+  height: 50px;
+}
+
+/* 🔤 Text Styling */
+
+h1 {
+  color: var(--White);
+  font-weight: var(--bolder);
+  font-size: 1.125rem;
+}
+
+h1:hover {
+  cursor: pointer;
+  color: var(--Cyan);
 }
 
 p {
   color: var(--Blue);
   font-weight: var(--normal);
-  font-size: 18px;
-  margin-top: 20px;
+  margin-top: 15px;
   margin-bottom: 20px;
+  font-size: 0.9375rem;
+}
+
+.name {
+  font-weight: var(--bold);
+  font-size: 0.75rem;
+  color: var(--Blue);
 }
 
 #name {
   color: var(--White);
+  font-size: 0.75rem;
+  font-weight: var(--bold);
 }
-/* Optional media tweaks */
-@media (max-width: 415px) {
-  .container {
-    padding: 1rem;
-  }
+
+#name:hover {
+  cursor: pointer;
+  color: var(--Cyan);
+}
+
+/* 💰 ETH + Timer Block */
+
+.score {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.eth-block,
+.time-block {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.time-block {
+  margin-left: 105px;
+}
+
+span.eth-text {
+  color: var(--Cyan);
+  font-weight: var(--bolder);
+  font-size: 0.75rem;
+}
+
+span.time-text {
+  color: var(--Blue);
+  font-weight: var(--bold);
+  font-size: 0.75rem;
+}
+
+/* 🔣 Icon Styling */
+
+#eth,
+#clock {
+  height: 1em;
+  width: auto;
+  vertical-align: middle;
 }
