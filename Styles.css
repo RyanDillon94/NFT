@@ -1,5 +1,4 @@
-/* 🌐 Global + Typography */
-
+/* Global + Typography */
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
 :root {
@@ -24,12 +23,10 @@
 }
 
 body {
-  margin: 0;
   background-color: var(--Bluemain);
 }
 
-/* 🧱 Layout Containers */
-
+/* Layout Containers */
 .container {
   display: flex;
   justify-content: center;
@@ -57,16 +54,14 @@ hr {
   height: 2px;
   border: none;
   width: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 .creator {
   margin-bottom: 15px;
 }
 
-/* 🖼️ Image + Overlay */
-
+/* Image + Overlay */
 .image-container {
   position: relative;
   width: 100%;
@@ -99,9 +94,7 @@ img:hover {
   margin-right: 15px;
 }
 
-
-/* Overlay + Icon */
-
+/* Overlay View Icon */
 .overlay {
   position: absolute;
   inset: 0;
@@ -122,10 +115,10 @@ img:hover {
   max-height: 50px;
   width: auto;
   height: auto;
+  object-fit: contain;
 }
 
-/* 🔤 Text Styling */
-
+/* Text Styling */
 h1 {
   color: var(--White);
   font-weight: var(--bolder);
@@ -140,8 +133,7 @@ h1:hover {
 p {
   color: var(--Blue);
   font-weight: var(--normal);
-  margin-top: 15px;
-  margin-bottom: 20px;
+  margin: 15px 0 20px;
   font-size: 0.9375rem;
 }
 
@@ -162,8 +154,7 @@ p {
   color: var(--Cyan);
 }
 
-/* 💰 ETH + Timer Block */
-
+/* ETH + Timer Block */
 .score {
   display: flex;
   align-items: center;
@@ -181,20 +172,19 @@ p {
   margin-left: 105px;
 }
 
-span.eth-text {
+.eth-text {
   color: var(--Cyan);
   font-weight: var(--bolder);
   font-size: 0.75rem;
 }
 
-span.time-text {
+.time-text {
   color: var(--Blue);
   font-weight: var(--bold);
   font-size: 0.75rem;
 }
 
-/* 🔣 Icon Styling */
-
+/* Icon Styling */
 #eth,
 #clock {
   height: 1em;
