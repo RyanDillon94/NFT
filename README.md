@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](ss1.png)
-![](ss2.png)
+![Inactive state screenshot](ss1.png)
+![Active state screenshot](ss2.png)
 
 ## My process
 - Started with HTML and then CSS, set up the basic outlay of words and basic structure. Had to swap back and forth between Mobile and Laptop but this was great to refresh my memory.
