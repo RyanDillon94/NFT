@@ -23,8 +23,8 @@ Users should be able to:
 - See hover states for interactive elements
 
 ### Screenshot
-![](./images/ss1.png)
-![](./images/ss2.png)
+![](nft-preview-card-component-main\images\ss1.png)
+![](nft-preview-card-component-main\images\ss2.png)
 
 ## My process
 - Started with HTML and then CSS, set up the basic outlay of words and basic structure. Had to swap back and forth between Mobile and Laptop but this was great to refresh my memory.
