@@ -23,6 +23,7 @@ Users should be able to:
 - See hover states for interactive elements
 
 ### Screenshot
+
 ![](nft-preview-card-component-main\images\ss1.png)
 ![](nft-preview-card-component-main\images\ss2.png)
 
