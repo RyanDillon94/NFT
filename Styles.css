@@ -159,6 +159,8 @@ p {
   display: flex;
   align-items: center;
   gap: 16px;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .eth-block,
@@ -168,9 +170,6 @@ p {
   gap: 6px;
 }
 
-.time-block {
-  margin-left: 105px;
-}
 
 .eth-text {
   color: var(--Cyan);
